@@ -1,21 +1,21 @@
 # Healthcare Symptom Checker
 
 ## Overview
-A Node.js-based backend that accepts user symptoms and returns possible health conditions and recommendations using an LLM (OpenAI API).
+A Node.js-based web application that provides AI-powered symptom analysis using Hugging Face models. Features a beautiful iOS-style interface and secure query logging.
 
 ## Features
-- Express backend API
-- LLM reasoning for symptom analysis
-- Educational disclaimer
-- Optional frontend + query logging
+- 🤖 **AI-Powered Analysis**: Uses Hugging Face models for symptom interpretation
+- 🎨 **Beautiful UI**: iOS-inspired design with health-themed styling
+- 📱 **Responsive Design**: Works perfectly on desktop and mobile
+- 💾 **Secure Logging**: SQLite database for query history (optional)
+- 🏥 **Professional**: Includes proper medical disclaimers
+- ⚡ **Real-time**: Fast AI responses with loading indicators
 
-## Setup
-1. Clone repo  
-2. Run `npm install`  
-3. Create `.env` with your `OPENAI_API_KEY`  
-4. Run `node server.js`
+## Tech Stack
+- **Backend**: Node.js, Express.js
+- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
+- **AI**: Hugging Face Inference API
+- **Database**: SQLite3
+- **Styling**: Custom CSS with iOS design patterns
 
-## API Example
-**POST** `/api/check-symptoms`
-```json
-{ "symptoms": "fever, cough" }
+## Project Structure
