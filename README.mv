@@ -1,0 +1,21 @@
+# Healthcare Symptom Checker
+
+## Overview
+A Node.js-based backend that accepts user symptoms and returns possible health conditions and recommendations using an LLM (OpenAI API).
+
+## Features
+- Express backend API
+- LLM reasoning for symptom analysis
+- Educational disclaimer
+- Optional frontend + query logging
+
+## Setup
+1. Clone repo  
+2. Run `npm install`  
+3. Create `.env` with your `OPENAI_API_KEY`  
+4. Run `node server.js`
+
+## API Example
+**POST** `/api/check-symptoms`
+```json
+{ "symptoms": "fever, cough" }
